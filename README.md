@@ -1,2 +1,2 @@
 # gradeCalculator
-those who want to check if the passed on their law exam.
+those who want to check if they passed on their law exam.
