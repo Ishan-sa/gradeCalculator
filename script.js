@@ -67,3 +67,35 @@ calculateBtn.addEventListener("click", () => {
     2
   )}%</span></h2><p>${resultText}</p>`;
 });
+
+let addBtn = document.querySelector(".add-btn");
+
+addBtn.addEventListener("click", () => {
+  let table = document.querySelector("tbody");
+  let newRow = document.createElement("tr");
+  newRow.innerHTML = `<tr>
+  <td>
+    <input
+      type="text"
+      class="description"
+      placeholder="Description"
+    />
+  </td>
+  <td>
+    <input type="number" class="grade" placeholder="Grade" />
+  </td>
+  <td>
+    <input type="number" class="weight" placeholder="Weight" />
+  </td>
+  <td><span class="mark">0</span>%</td>
+</tr>
+<tr>`;
+  table.appendChild(newRow);
+});
+
+let deleteBtn = document.querySelector(".delete-btn");
+
+deleteBtn.addEventListener("click", () => {
+  let table = document.querySelector("tbody");
+  table.removeChild(table.lastChild);
+});

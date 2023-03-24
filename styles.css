@@ -95,6 +95,42 @@ input:focus {
   width: 60px;
 }
 
+.add-btn {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-top: 20px;
+  background-color: #1788c9;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.add-btn:hover {
+  background-color: #0f6bb0;
+}
+
+.delete-btn {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-top: 20px;
+  background-color: #ff3d3d;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.delete-btn:hover {
+  background-color: #da3a3a;
+}
+
+.btn-cont {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
 @media only screen and (max-width: 600px) {
   .container {
     max-width: 100%;
@@ -107,12 +143,14 @@ input:focus {
     padding: 5px;
   }
 
-  .calculate-btn {
-    margin: 10px auto;
-    padding: 5px 10px;
-  }
-
   .result {
     margin-top: 10px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .btn-cont {
+    flex-direction: column;
+    gap: 0;
   }
 }
